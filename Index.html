@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>گرادیانت موجی RGB</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
 
+    body {
+      background: linear-gradient(45deg, red, green, blue);
+      background-size: 400% 400%;
+      animation: gradientWave 20s ease-in-out infinite;
+    }
+
+    @keyframes gradientWave {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+</body>
+</html>
